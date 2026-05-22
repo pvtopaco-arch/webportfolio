@@ -3,26 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <title>Full Stack Web Developer</title>
-    <meta name="description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
-
-    <link rel="icon" type="image/png" href="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
-
-    <meta property="og:url" content="https://pvtopaco-arch.github.io/webportfolio/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Full Stack Web Developer">
-    <meta property="og:description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
-    <meta property="og:image" content="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="pvtopaco-arch.github.io">
-    <meta property="twitter:url" content="https://pvtopaco-arch.github.io/webportfolio/">
-    <meta name="twitter:title" content="Full Stack Web Developer">
-    <meta name="twitter:description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
-    <meta name="twitter:image" content="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,21 +18,25 @@
 
 <body>
 
+    <!--            START OF NAV BAR                -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
          
-            <a id="logo" class="navbar-brand" href="#landing" aria-label="Paul Opaco Portfolio - Back to Home">
+            <!-- Brand Logo -->
+            <a id="logo" class="navbar-brand" href="#landing">
                 <img src="./images/logo.png" alt="PaulOpaco Logo" class="img-fluid">
             </a>
 
+            <!-- Mobile Hamburger Menu Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#landing">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -56,44 +44,60 @@
 
         </div>
     </nav> 
-    
+    <!-- END OF NAV BAR -->
+
+    <!--          START OF LANDING PAGE             -->
     <div class="container-fluid text-center p-3 bg-light" id="landing">
         <div id="landinginfo" class="row mt-3 mb-3 align-items-center justify-content-center">
                
-            <div class="col-12 col-md-4 col-lg-3 order-1 d-flex justify-content-center align-items-center">
-                <div class="profile-card rounded-circle overflow-hidden ratio ratio-1x1 shadow-sm">
-                    <img src="images/landingphoto.jpg" class="img-fluid w-100 h-100 object-fit-cover bg-secondary main-img" alt="Paul Opaco Avatar">
-                    <img src="images/landingphoto1.png" class="img-fluid w-100 h-100 object-fit-cover bg-secondary hover-img" alt="Paul Opaco Real">
-                </div>
-            </div>
-            
+            <!-- Column 1: Image Panel -->
+       <div class="col-12 col-md-4 col-lg-3 order-1 d-flex justify-content-center align-items-center">
+           <div class="profile-card rounded-circle overflow-hidden ratio ratio-1x1 shadow-sm">
+               
+               <img src="images/landingphoto.jpg" class="img-fluid w-100 h-100 object-fit-cover bg-secondary main-img" alt="Paul Opaco Avatar">
+               
+               <img src="images/landingphoto1.png" class="img-fluid w-100 h-100 object-fit-cover bg-secondary hover-img" alt="Paul Opaco Real">
+               
+           </div>
+       </div>
+            <!-- Column 2: Personal-->
             <div class="col-12 col-md-6 col-lg-5 offset-lg-1 order-2 text-md-start px-md-4 mt-4 mt-md-0">
                 <span class="tech-badge mb-2 d-inline-block">Full Stack Web Developer</span>
+                   
                 <h1 class="display-5 fw-bold mb-3 text-dark">
                     Hi, I'm <span class="text-gradient text-nowrap">Paul Opaco</span>
                 </h1>
+                   
                 <p class="lead text-secondary mb-4">
                     I enjoy building things that live on the internet, from websites to web apps. I am currently better at the first one, but I'm always learning.
                 </p>
+                   
+                <!-- Call-To-Action Buttons -->
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-                    <a class="btn btn-dark btn-lg px-3 py-2 custom-btn shadow-sm" href="#projects">
+                    <a class="btn btn-dark btn-lg px-3 py-2 custom-btn shadow-sm" href="#project">
                         View work <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-                    
-                    <a class="btn btn-outline-dark btn-lg px-3 py-2 custom-btn shadow-sm" href="./PaulOpaco_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                        View Resume <i class="bi bi-file-earmark-pdf ms-1"></i>
+                    <a class="btn btn-dark btn-lg px-3 py-2 custom-btn shadow-sm" href="#">
+                        About me <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>
             </div>
 
         </div> 
     </div> 
-    
-    <div class="container-fluid py-5 bg-light" id="projects">
+    <!-- END OF LANDING PAGE -->
+
+    <!--           START OF PROJECTS SECTION        -->
+
+    <div class="container-fluid py-5 bg-light" id="project">
         <div class="container">
+             
             <h1 class="section-title text-center fw-bold mb-5 project-heading">My Projects</h1>
+
+            <!-- Project Lesson Layout  -->
             <div class="row gy-4 justify-content-center">
 
+                <!-- Project 1: E-commerce API -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -108,6 +112,7 @@
                     </div>
                 </div>
 
+                <!-- Project 2: Course Booking API -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -122,6 +127,7 @@
                     </div>
                 </div>
 
+                <!-- Project 3: Course Booking App -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -136,6 +142,7 @@
                     </div>
                 </div>
 
+                <!-- Project 4: E-commerce App -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -150,6 +157,7 @@
                     </div>
                 </div>
 
+                <!-- Project 5: Airline Booking Mockup -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -164,6 +172,7 @@
                     </div>
                 </div>
 
+                <!-- Project 6: Airline Booking Prototype -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -178,6 +187,8 @@
                     </div>
                 </div>
 
+
+                <!-- Project 7:Shortcourses Prototype -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -192,6 +203,8 @@
                     </div>
                 </div>
 
+
+                  <!-- Project 8:Shortcourses Prototype -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
@@ -206,10 +219,13 @@
                     </div>
                 </div>
 
+
+
+                <!-- Project 9:Shortcourses Prototype -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
                         <div class="image-wrapper rounded-3 overflow-hidden p-4 text-center">
-                            <img src="./images/EcommerceAPI6.PNG" class="img-fluid project-img" alt="Airline Booking System Prototype Illustration">
+                            <img src="./images/EcommerceAPI6.png" class="img-fluid project-img" alt="Airline Booking System Prototype Illustration">
                         </div>
                         <div class="card-body px-1 pt-3">
                             <h4 class="card-title fw-bold project-card-title">Short Courses Capstone</h4>
@@ -220,15 +236,22 @@
                     </div>
                 </div>
 
-            </div>
+
+            </div><!-- [FIXED] Removed the stray redundant </div> that was here previously -->
         </div>
     </div>
-    
+    <!-- END OF PROJECTS SECTION -->
+
+    <!--            START OF TOOLS SECTION          -->
+
     <div class="container-fluid py-5 bg-white" id="tools">
         <div class="container">
+
             <h1 class="text-center fw-bold mb-5 tools-main-title project-heading">Tools</h1>
+
             <div class="row g-5 justify-content-center">
 
+                <!-- Category 1: Front End Stack -->
                 <div class="col-12 col-md-6 col-lg-4 text-center">
                     <h3 class="fw-bold mb-4 tools-category-title">Front End</h3>
                     <div class="row g-4 justify-content-center align-items-center">
@@ -239,6 +262,7 @@
                     </div>
                 </div>
 
+                <!-- Category 2: MERN Stack Backend -->
                 <div class="col-12 col-md-6 col-lg-4 text-center">
                     <h3 class="fw-bold mb-4 tools-category-title">MERN</h3>
                     <div class="row g-4 justify-content-center align-items-center">
@@ -249,6 +273,7 @@
                     </div>
                 </div>
 
+                <!-- Category 3: Utilities & Other Tools -->
                 <div class="col-12 col-md-6 col-lg-4 text-center">
                     <h3 class="fw-bold mb-4 tools-category-title">Other Tools</h3>
                     <div class="row g-4 justify-content-center align-items-center">
@@ -262,12 +287,19 @@
             </div>
         </div>
     </div>
-    
+    <!-- END OF TOOLS SECTION -->
+  
+
+
+    <!--           START OF CONTACT SECTION         -->
+  
     <div class="container-fluid py-5 bg-light" id="contact">
         <div class="container">
             <h1 class="text-center fw-bold mb-5 contact-main-title project-heading">Contact</h1>
+            
             <div class="row align-items-stretch g-4 g-lg-5">
                 
+                <!-- Left Block: Embedded Interactive Map Container -->
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="w-100 rounded-3 overflow-hidden shadow-sm border map-wrapper">
                         <iframe 
@@ -282,23 +314,29 @@
                     </div>
                 </div>
                 
+                <!-- Right Block: User Contact Feedback Form -->
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
                     <form class="w-100 d-flex flex-column h-100">
+                        <!-- Input Name -->
                         <div class="mb-3">
-                            <input type="text" name="fullName" class="form-control custom-input" placeholder="First Name M.I. Last Name" aria-label="Full Name" required>
+                            <input type="text" name="fullName" class="form-control custom-input" placeholder="First Name M.I. Last Name" required>
                         </div>
+                        <!-- Input Email [FIXED text -> email type] -->
                         <div class="mb-3">
-                            <input type="email" name="email" class="form-control custom-input" placeholder="Email" aria-label="Email Address" required>
+                            <input type="email" name="email" class="form-control custom-input" placeholder="Email" required>
                         </div>
+                        <!-- Message Body -->
                         <div class="mb-4 flex-grow-1">
-                            <textarea name="message" class="form-control custom-input" rows="6" placeholder="Message" aria-label="Message Body" required></textarea>
+                            <textarea name="message" class="form-control custom-input" rows="6" placeholder="Message" required></textarea>
                         </div>
 
+
+                        <!-- Footer Elements of Form (Social Anchor Tags + Form Action Trigger) -->
                         <div id ="socmed" class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-auto">
                             <div class="d-flex gap-3 social-icons fs-4">
-                                <a href="https://www.linkedin.com/in/paulopaco/" class="text-dark-blue" aria-label="Visit Paul's LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://www.facebook.com/senoretenten/" class="text-dark-blue" aria-label="Visit Paul's Facebook Profile"><i class="bi bi-facebook"></i></a>
-                                <a href="https://github.com/pvtopaco-arch" class="text-dark-blue" aria-label="Visit Paul's GitHub Profile"><i class="bi bi-github"></i></a>
+                                <a href="#socmed" class="text-dark-blue"><i class="bi bi-linkedin"></i></a>
+                                <a href="#socmed" class="text-dark-blue"><i class="bi bi-gitlab"></i></a>
+                                <a href="#socmed" class="text-dark-blue"><i class="bi bi-github"></i></a>
                             </div>
                             <button type="submit" class="btn btn-primary custom-submit-btn px-4 py-2">Submit</button>
                         </div>
@@ -309,16 +347,24 @@
         </div>
     </div>
 
+    <!-- END OF CONTACT SECTION -->
+
+
+    <!--               FOOTER SECTION               -->
+
     <footer id="footer" class="custom-footer py-4 text-center bg-secondary text-white">
         <div class="container">
             <h5 class="fw-normal mb-1 footer-name">Paul Vincent Opaco</h5>
             <p class="small text-white-50 mb-3 footer-subtitle">Full Stack Web Developer</p>
             <h4 class="fw-normal mb-1 footer-name">Nicole "Nikkie" Gamat</h4>
             <p class="small text-white-50 mb-1 footer-subtitle">Trainer</p>
+
             <p class="small text-white-50 mb-0 footer-copy">© All Rights Reserved 2026</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Essential Bundle JS (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
